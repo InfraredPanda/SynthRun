@@ -74,7 +74,7 @@ public class MenuState extends GameState {
 		// draw title
 		g.setColor(titleColor);
 		g.setFont(titleFont);
-		g.drawString("A R T I F A C T", 70, 90);
+		g.drawString("S Y N T H R U N", 70, 90);
 		
 		// draw menu options
 		g.setFont(font);
@@ -87,8 +87,6 @@ public class MenuState extends GameState {
 		else if(currentChoice == 1) g.drawImage(head, 125, 174, null);
 		
 		// other
-		g.setFont(font2);
-		g.drawString("Copyright", 10, 232);
 		
 	}
 	
