@@ -28,7 +28,7 @@ public class Level1AState extends GameState {
 	
 	private Background sky;
 	private Background clouds;
-	private Background mountains;
+	private Background buildings;
 	
 	private Player player;
 	private TileMap tileMap;
@@ -61,7 +61,7 @@ public class Level1AState extends GameState {
 		// backgrounds
 		sky = new Background("/Backgrounds/sky.gif", 0);
 		clouds = new Background("/Backgrounds/clouds.gif", 0.1);
-		mountains = new Background("/Backgrounds/mountains.gif", 0.2);
+		buildings = new Background("/Backgrounds/buildings.gif", 0.2);
 		
 		// tilemap
 		tileMap = new TileMap(30);
@@ -218,7 +218,7 @@ public class Level1AState extends GameState {
 		
 		// move backgrounds
 		clouds.setPosition(tileMap.getx(), tileMap.gety());
-		mountains.setPosition(tileMap.getx(), tileMap.gety());
+		buildings.setPosition(tileMap.getx(), tileMap.gety());
 		
 		// update player
 		player.update();
@@ -271,7 +271,7 @@ public class Level1AState extends GameState {
 		// draw background
 		sky.draw(g);
 		clouds.draw(g);
-		mountains.draw(g);
+		buildings.draw(g);
 		
 		// draw tilemap
 		tileMap.draw(g);
