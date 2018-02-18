@@ -38,7 +38,6 @@ public class Gazer extends Enemy {
 		tick = 0;
 		a = Math.random() * 0.06 + 0.07;
 		b = Math.random() * 0.06 + 0.07;
-		
 	}
 	
 	public void update() {
